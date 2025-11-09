@@ -11,15 +11,16 @@ var lastaction;
 var pi = 3.14159;
 var moveinterval = 2; // 2 second movement interval
 var maxrandom = 5; // 0-5 seconds added to movement interval (randomly)
-var host = data["ip"];
-var username = data["name"]
+var host = data["Kiingdom_SmP.aternos.me:38683"];
+var username = data["DIBBACHOR"]
 var bot = mineflayer.createBot({
   host: host,
   username: username
 });
 function getRandomArbitrary(min, max) {
        return Math.random() * (max - min) + min;
-
+	
+	bot.chat('/login Prateek125')
 }
 bot.on('login',function(){
 	console.log("Logged In")
